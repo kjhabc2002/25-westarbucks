@@ -1,0 +1,362 @@
+
+# 생성: https://www.toptal.com/developers/gitignore/api/python,pycharm,visualstudiocode,vim,macos,linux,zsh
+# https://www.toptal.com/developers/gitignore?templates=python,pycharm,visualstudiocode,vim,macos,linux,zsh에서 편집
+
+### 리눅스 ###
+*~
+
+# 프로세스에 삭제된 파일의 핸들이 열려 있는 경우 생성할 수 있는 임시 파일
+.fuse_hidden*
+
+# KDE 디렉토리 환경설정
+.예배 규칙서
+
+# 모든 파티션이나 디스크에 나타날 수 있는 Linux 휴지통 폴더
+.쓰레기-*
+
+# .nfs 파일은 열려 있는 파일이 제거되었지만 여전히 액세스 중일 때 생성됩니다.
+.nfs*
+
+### 맥 OS ###
+# 일반적인
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 아이콘은 두 개의 \r로 끝나야 합니다.
+상
+
+
+# 썸네일
+._*
+
+# 볼륨의 루트에 나타날 수 있는 파일
+.DocumentRevisions-V100
+.fseventsd
+.스포트라이트-V100
+.TemporaryItems
+.휴지통
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# 원격 AFP 공유에 잠재적으로 생성된 디렉토리
+.AppleDB
+.Apple데스크탑
+네트워크 휴지통 폴더
+임시 아이템
+.apdisk
+
+### 파이참 ###
+# JetBrains IDE 포함: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm 및 Rider
+# 참조: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# 사용자별 항목
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/사전
+.idea/**/선반
+
+# AWS 사용자별
+.아이디어/**/aws.xml
+
+# 생성된 파일
+.idea/**/contentModel.xml
+
+# 민감하거나 이탈률이 높은 파일
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# 그래들
+.idea/**/gradle.xml
+.idea/**/라이브러리
+
+# 자동 가져오기 기능이 있는 Gradle 및 Maven
+# 자동 가져오기와 함께 Gradle 또는 Maven을 사용할 때 모듈 파일을 제외해야 하며,
+# 다시 생성되어 변동을 일으킬 수 있기 때문입니다. 사용하는 경우 주석 해제
+# 자동 가져오기.
+# .아이디어/인공물
+# .아이디어/컴파일러.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .아이디어/*.iml
+# .아이디어/모듈
+# *.iml
+# *.ipr
+
+# 씨메이크
+cmake-빌드-*/
+
+# 몽고 익스플로러 플러그인
+.idea/**/mongoSettings.xml
+
+# 파일 기반 프로젝트 형식
+*.iws
+
+# 인텔리제이
+밖/
+
+# mpeltonen/sbt-idea 플러그인
+.idea_modules/
+
+# JIRA 플러그인
+atlassian-ide-plugin.xml
+
+# 필기체 클로저 플러그인
+.아이디어/replstate.xml
+
+# Crashlytics 플러그인(Android Studio 및 IntelliJ용)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# 에디터 기반 Rest 클라이언트
+.idea/httpRequests
+
+# Android 스튜디오 3.1 이상 직렬화된 캐시 파일
+.idea/caches/build_file_checksums.ser
+
+### 파이참 패치 ###
+# 댓글 이유: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+# *.iml
+# 모듈.xml
+# .idea/misc.xml
+# *.ipr
+
+# Sonarlint 플러그인
+# https://plugins.jetbrains.com/plugin/7973-sonarlint
+.idea/**/sonarlint/
+
+# SonarQube 플러그인
+# https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
+.idea/**/sonarIssues.xml
+
+# 마크다운 네비게이터 플러그인
+# https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator-enh.xml
+.idea/**/markdown-navigator/
+
+# 캐시 파일 생성 버그
+# https://youtrack.jetbrains.com/issue/JBR-2257 참조
+.아이디어/$CACHE_FILE$
+
+# 코드스트림 플러그인
+# https://plugins.jetbrains.com/plugin/12206-codestream
+.idea/codestream.xml
+
+### 파이썬 ###
+# 바이트 컴파일 / 최적화 / DLL 파일
+__파이캐시__/
+*.py[코드]
+*$py.class
+
+# C 확장
+*.그래서
+
+# 유통/포장
+.파이썬
+짓다/
+계란을 발달시키다/
+거리/
+다운로드/
+달걀/
+.달걀/
+라이브러리/
+lib64/
+부속/
+sdist/
+변수/
+바퀴/
+공유/파이썬 휠/
+*.egg 정보/
+.installed.cfg
+*.계란
+명백한
+
+# 파이 인스톨러
+# 일반적으로 이러한 파일은 템플릿에서 파이썬 스크립트로 작성됩니다.
+# PyInstaller가 exe를 빌드하기 전에 날짜/기타 정보를 삽입합니다.
+*.명백한
+*.투기
+
+# 설치 프로그램 로그
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 단위 테스트 / 커버리지 보고서
+htmlcov/
+.tox/
+.녹스/
+.적용 범위
+.적용 범위.*
+.은닉처
+노즈테스트.xml
+Coverage.xml
+*.씌우다
+*.py, 표지
+.가설/
+.pytest_cache/
+씌우다/
+
+# 번역
+*.모
+*.냄비
+
+# 장고 항목:
+*.통나무
+local_settings.py
+db.sqlite3
+db.sqlite3-저널
+
+# 플라스크 재료:
+사례/
+.webassets-캐시
+
+# 쓰레기 같은 것들:
+.스크레이피
+
+# 스핑크스 문서
+문서/_빌드/
+
+# 파이빌더
+.pybuilder/
+표적/
+
+# 주피터 노트북
+.ipynb_checkpoints
+
+# 아이파이썬
+프로필_기본/
+ipython_config.py
+
+#피엔브
+# 라이브러리나 패키지의 경우 코드가 다음과 같으므로 이러한 파일을 무시할 수 있습니다.
+# 여러 환경에서 실행하기 위한 것입니다. 그렇지 않으면 체크인하십시오.
+# .python 버전
+
+#파이펜
+# pypa/pipenv#598에 따르면 버전 관리에 Pipfile.lock을 포함하는 것이 좋습니다.
+# 단, 협업의 경우 플랫폼별 종속성 또는 종속성이 있는 경우
+# 플랫폼 간 지원이 없기 때문에 pipenv는 작동하지 않거나 작동하지 않는 종속성을 설치할 수 있습니다.
+# 필요한 모든 종속성을 설치합니다.
+#Pipfile.lock
+
+# PEP 582; 예를 들어 github.com/David-OConnor/pyflow에서 사용
+__파이패키지__/
+
+# 셀러리 재료
+celerybeat 일정
+celerybeat.pid
+
+# SageMath 구문 분석 파일
+*.sage.py
+
+# 환경
+.env
+.venv
+환경/
+벤/
+환경/
+env.bak/
+venv.bak/
+
+# 스파이더 프로젝트 설정
+.스파이더 프로젝트
+.spyproject
+
+# 로프 프로젝트 설정
+.ropeproject
+
+# mkdocs 문서
+/대지
+
+# 마이피
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# 파이어 유형 검사기
+.파이어/
+
+# pytype 정적 유형 분석기
+.pytype/
+
+# 사이썬 디버그 기호
+cython_debug/
+
+### 빔 ###
+# 스왑
+[._]*.s[av][az]
+!*.svg # 벡터 파일이 필요하지 않으면 주석 처리
+[._]*.교환]
+[._]s[a-rt-v][az]
+[._]ss[a-gi-z]
+[._]교환]
+
+# 세션
+세션.vim
+Sessionx.vim
+
+# 일시적인
+.netrwhist
+# 자동 생성된 태그 파일
+태그
+# 지속적인 실행 취소
+[._]*.운~
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-작업 공간
+
+# Visual Studio Code의 로컬 기록
+.역사/
+
+### VisualStudioCode 패치 ###
+# 파일의 모든 로컬 기록 무시
+.역사
+.이오나이드
+
+### 쉿 ###
+# Zsh 컴파일된 스크립트 + zrecompile 백업
+*.zwc
+*.zwc.old
+
+# Zsh 완료 최적화 덤프 파일
+*zcompdump*
+
+# Zsh zcalc 기록
+.zcalc_history
+
+# 인기있는 플러그인 관리자 파일
+._지니트
+.zinit_lstupd
+
+# zdharma/zshelldoc 도구의 파일
+zsdoc/데이터
+
+# robbyrussell/oh-my-zsh/plugins/per-directory-history 플러그인 파일
+# (로컬 디렉토리에 히스토리를 저장하도록 설정한 경우)
+.directory_history
+
+# MichaelAquilina/zsh-autoswitch-virtualenv 플러그인 파일
+# (Python을 사용하는 Zsh 플러그인의 경우)
+
+# Zunit 테스트의 출력
+/테스트/_출력/*
+!/tests/_output/.gitkeep
+
+# https://www.toptal.com/developers/gitignore/api/python,pycharm,visualstudiocode,vim,macos,linux,zsh 끝
+
+my_settings.py
