@@ -16,5 +16,5 @@ Including another URLconf
 from django.urls import path
 
 urlpatterns = [
-   
-]
+   # path('', ProductsView.as_view())  
+] 

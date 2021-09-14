@@ -10,26 +10,27 @@ class Menu(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=20)
-    menu = models.ForeignKey('Menu', on_delete=models.SET_NULL, null=true)
+    menu = models.ForeignKey('Menu', on_delete=models.CASCADE)
 
     class Meta:
           db_table = 'categories'
 
-class Products(models.Model):
-    category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True)
-    korean_name = models.CharField(max_length=50)
-    english_name = models.CharField(max_length=50)
+class Product(models.Model): 
+    name = models.CharField(max_length=50)
     description = models.CharField(max_length=500)
+    category = models.ForeignKey('Category', on_delete=models.CASCADE)
+    nutrition = models.OneToOneField('Nutrition', on_delete=models.CASCADE)
+    allergies = models.ManyToManyField('Allergy', through = 'ProductAllergy')
 
     class Meta:
         db_table = 'products'
 
-class AllergyDrink(models.Model):
-    allergy = models.ForeignKey('Allergy', on_delete=models.SET_NULL, null=True)
-    drink = models.ForeignKey('Drink', on_delete=models.SET_NULL, null=True)
+class ProductAllergy(models.Model):
+    allergy = models.ForeignKey('Allergy', on_delete=models.CASCADE)
+    product = models.ForeignKey('Product', on_delete=models.CASCADE)
 
     class Meta:
-        db_table = 'allergies_drinks'
+        db_table = 'product_allergies'
 
 
 class Allergy(models.Model):
@@ -45,16 +46,15 @@ class Nutrition(models.Model):
     sugars_g = models.DecimalField(max_digits=10, decimal_places=2)
     protein_g = models.DecimalField(max_digits=10, decimal_places=2)
     caffeine_mg = models.DecimalField(max_digits=10, decimal_places=2)
-    drink = models.ForeignKey('Drink', on_delete=models.SET_NULL, null=True)
 
     class Meta:
         db_table = 'nutritions'
 
 class Image(models.Model):
     image_url = models.URLField(max_length=2000)
-    drink = models.ForeignKey('Drink', on_delete=models.SET_NULL, null=True)
+    product = models.ForeignKey('Product', on_delete=models.CASCADE)
 
     class Meta:
-        db_table = 'images
+        db_table = 'images'
 
 
